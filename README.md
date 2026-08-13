@@ -100,22 +100,63 @@ The model is trained to classify images into six categories.
 
 ---
 
-## 📂 Dataset Structure
+# 📊 Dataset
 
-The dataset is organized into separate folders for each class.
+The project uses a garbage image dataset containing six different categories of waste.
+
+### Garbage Categories
+
+- Cardboard
+- Glass
+- Metal
+- Paper
+- Plastic
+- Trash
+
+### Dataset Distribution
+
+| Category | Number of Images |
+|---|---:|
+| Cardboard | 403 |
+| Glass | 501 |
+| Metal | 410 |
+| Paper | 594 |
+| Plastic | 482 |
+| Trash | 137 |
+| *Total* | *2527* |
+
+The dataset contains *2527 images* across six garbage categories.
+
+The dataset is divided into training and validation data using an *80/20 split*.
+
+Approximately:
+
+- Training Images: 2024
+- Validation Images: 503
+
+### Dataset Download
+
+The complete dataset can be downloaded from Kaggle:
+
+👉 [Download Garbage Classification Dataset](https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification)
+
+After downloading, extract the dataset and place it inside the project as:
 
 ```text
 dataset/
-│
 ├── cardboard/
 ├── glass/
 ├── metal/
 ├── paper/
 ├── plastic/
 └── trash/
-```
 
-The folder name is used as the corresponding class label during dataset loading.
+
+### If you specifically want to upload the 2527 images to GitHub
+
+*41.3 MB is below GitHub's 100 MB per-file limit*, but GitHub recommends keeping repositories much smaller, and 2,527 separate files can make the repository unnecessarily heavy.
+
+For your *college/project GitHub*, I recommend the first approach. Keep the dataset locally and upload the trained garbage_model.keras plus your source code.
 
 ---
 
